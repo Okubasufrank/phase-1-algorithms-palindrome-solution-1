@@ -1,9 +1,28 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  var reversed=reverse(word)
+  if(reversed==word){
+    return true
+    console.log(true)
+  }
+  else{
+    return false;
+    console.log(false)
+
+  }
 }
 
+
+function reverse(s) {
+  return s.split('').reverse().join('');
+}
 /* 
   Add your pseudocode here
+  STEP 1 :Take in the arguments
+  STEP 2  :Reverse the parameter
+  STEP 3 Compare the reversed with the original
+  STEP 4 If it matches return true else return false
 */
 
 /*
